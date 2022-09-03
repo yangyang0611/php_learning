@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+        <title>fosterage</title>
+       
+        <!--Bootstrap-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+        <!--local css-->
+        <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+    </head>
+
+    <body>
+        <?php include "navbar.php" ;?>
+        <h1>寵物寄放計劃</h1>
+        如您有外出需要，本店可提供寄放專區。請如實填寫下列表單，我們期待爲您提供服務。
+
+        <form action="fosterage.php" method="POST">
+            <h3>主人資訊</h3>
+            <ul>
+                <li>姓名：<input type="text" name="people"></li> <p>
+                <li>電話：<input type="text" name="phone"></li> <p>
+                <li>住址：<input type="text" name="addr"></li> <p>
+            </ul>
+            
+            <h3>寵物資訊</h2>
+            <ul>
+                <li>姓名：<input type="text" name="animal"></li> <p>
+                <li>品種：<input type="text" name="type"></li> <p>
+                <li>毛色：<input type="text" name="color"></li> <p>
+                <li>年齡：<input type="text" name="age"></li> <p>
+                <li>疾病：<input type="text" name="sickness"></li> <p>
+                <li>飲食習慣：<input type="text" name="food"></li> <p>
+                <li>特別交代事項：<input type="text" name="other"></li> <p>
+            </ul>
+            <input type="submit" value="提交" class="btn btn-primary">
+        </form> 
+
+        <p><p>
+        <a href="index.php">
+            <button type="button" class="btn btn-outline-secondary">回主頁</button>
+        </a>
+        <p>
+    </body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!--local css-->
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+
+</head>
+
+<body>
+    <h2>請輸入您的個人資料，確認后請按提交按鈕</h2>
+    <form action="register.php" method="POST">
+        <ol>
+            <li>用戶名：<input type="text" name="name"></li><p>
+            <li>手機號：<input type="text" name="phone"></li><p>
+            <li>郵箱：<input type="text" name="email"></li><p>
+            <li>密碼：<input type="password" name="password1"></li><p>
+            <li>再次輸入密碼：<input type="password" name="password2"></li><p>
+        </ol>
+        <button name="insert" class="btn btn-primary">提交</button>
+    </form>  
+
+<p><p><p>    
+<a href="index.php">
+    <button type="button" class="btn btn-outline-secondary">回主頁</button>
+</a>
+<p>
+
+</body>
+</html>
